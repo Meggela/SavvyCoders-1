@@ -1,9 +1,8 @@
-# Meg's Haiku
+# Meg's SavvyCoders Portfolio Project
 
-__I am so sleepy.__
+Welcome to my page. Thank you for stopping by.
 
-My cat is a morning guy;
-
-___Cruel, furry sadist.___
-
- - Haiku by SleepyHead Meg
+I hope to become proficient in:
+* HTML
+* CSS
+* JavaScript
