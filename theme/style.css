@@ -1,12 +1,39 @@
 h1 {
-  color: hotpink;
+  color: coral;
 }
-div {
-  background-color:chartreuse;color:blue;
+h2 {
+  color: blue;
+}
+.bloglink {
+  color: yellow;
+}
+.navigation + div{
+  background-color:chartreuse;
+  color:blue;
 }
 .slanted {
   font-style: italic;
 }
 #emphatic {
   font-weight: bold;
+}
+#content {
+  border-width: 2px;
+  border-color: magenta;
+  border-style: solid;
+}
+.navigation > a {
+  color: orange;
+}
+.navigation {
+
+}
+.navigation a {
+
+}
+.navigation li:first-child {
+  background-color: yellow;
+}
+.navigation + div li:first-child {
+  background-color: green;
 }
