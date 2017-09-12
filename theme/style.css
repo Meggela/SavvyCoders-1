@@ -1,32 +1,37 @@
-h1 {
-  color: coral;
+.header {
+  color: black;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size:300%;
+  font-weight: 500;
+  height: 100px;
+  width: 700px;
+  border: 5px solid black;
+  margin: 20px;
 }
-h2 {
-  color: blue;
+.content {
+  color: black;
+  font-size: 150%;
+  font-weight: 250;
+  margin: 40px;
 }
-.bloglink {
-  color: yellow;
+.services{
+  color: black;
+  font-size: 125%;
+  font-weight: 200;
+  margin: 40px;
 }
-.navigation + div{
-  background-color:chartreuse;
+.services li:hover {
+  background-color: #CA4643;
+}
+.navigation {
   color:blue;
-}
-.slanted {
-  font-style: italic;
-}
-#emphatic {
-  font-weight: bold;
-}
-#content {
-  border-width: 2px;
-  border-color: magenta;
-  border-style: solid;
 }
 .navigation > a {
   color: orange;
 }
 .navigation {
-
+  color: orange;
 }
 .navigation a {
 
@@ -36,4 +41,12 @@ h2 {
 }
 .navigation + div li:first-child {
   background-color: green;
+}
+
+#haiku {
+  color: #550200;
+  height: 80px;
+  width: 700px;
+  border: 3px dotted black;
+  margin: 20px;
 }
