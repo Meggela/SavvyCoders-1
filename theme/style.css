@@ -9,6 +9,10 @@
   border: 5px solid black;
   margin: 20px;
 }
+.header1-content {
+  color: black;
+  font-size: 20%
+}
 .content {
   color: black;
   font-size: 150%;
@@ -25,28 +29,41 @@
   background-color: #CA4643;
 }
 .navigation {
-  color:blue;
+  color: blue;
+  font-family: Arial;
+  background-color: yellow;
+  padding: 1px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+}
+.navigation li:first-child {
+  color: black;
 }
 .navigation > a {
-  color: orange;
-}
-.navigation {
-  color: orange;
+  color: black;
 }
 .navigation a {
 
 }
-.navigation li:first-child {
-  background-color: yellow;
-}
 .navigation + div li:first-child {
   background-color: green;
+  margin: 5px;
+  padding: 10px
 }
-
-#haiku {
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+.haiku {
   color: #550200;
   height: 80px;
   width: 700px;
+  padding: 20px 50px;
   border: 3px dotted black;
   margin: 20px;
+}
+.languages li:hover {
+  color: #2649A9;
 }
