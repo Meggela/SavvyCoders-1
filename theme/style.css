@@ -9,9 +9,20 @@
   border: 5px solid black;
   margin: 20px;
 }
+.header-contact {
+  color: black;
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size:300%;
+  font-weight: 500;
+  height: 100px;
+  width: 700px;
+  border: 5px solid black;
+  margin: 20px;
+}
 .header1-content {
   color: black;
-  font-size: 20%
+  font-size: 120%
 }
 .content {
   color: black;
@@ -25,6 +36,12 @@
   font-weight: 200;
   margin: 40px;
 }
+.languagesheader {
+  font-weight: bold;
+}
+.foodsheader {
+  font-weight: bold;
+}
 .services li:hover {
   background-color: #CA4643;
 }
@@ -33,16 +50,15 @@
   font-family: Arial;
   background-color: yellow;
   padding: 1px 0;
-  position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
+  display: inline;
+  position: relative;
 }
 .navigation li:first-child {
-  color: black;
 }
 .navigation > a {
-  color: black;
 }
 .navigation a {
 
@@ -52,18 +68,51 @@
   margin: 5px;
   padding: 10px
 }
+.navigation: dropdown;
+
+#menu {
+  font-family: sans-serif;
+  margin: 80px;
+  display: inline;
+  cursor: pointer;
+  position: relative;
+}
+#menu > ul {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+#menu:hover {
+
+}
+#menu:hover > ul {
+  display: list-item;
+}
 .container {
   max-width: 750px;
   margin: 0 auto;
 }
+.haikuheader {
+  font-weight: bold;
+}
 .haiku {
   color: #550200;
-  height: 80px;
   width: 700px;
   padding: 20px 50px;
   border: 3px dotted black;
   margin: 20px;
 }
 .languages li:hover {
-  color: #2649A9;
+  color: #0A4BFB;
+}
+.foods li:hover {
+  color: #0A4BFB;
+}
+.footer {
+  font-size: 12px;
 }
