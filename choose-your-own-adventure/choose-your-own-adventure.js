@@ -1,6 +1,7 @@
+/* globals $ */
 var story = {
     "start": {
-        "prompt": "You are standing in a cool, grassy dale. Behind you is a hardwood forest. To your right is a footpath meandering through grasses leading to a green hill. Will you go behind you into the forest or walk through the grasses toward the hill?",
+        "prompt": "You are standing in a cool, grassy dale. Behind you is a hardwood forest. To your right is a footpath meandering through grasses leading to a green hill. Will you go behind you into the forest or walk through the grasses toward the hill? Please choose ",
         "choices": [ "forest", "grasses" ]
     },
     "forest": {
@@ -25,16 +26,19 @@ var story = {
     },
 };
 
-function runStory( node ){
-    var branch = story[node];
-    var choices = branch.choices;
-    var userInput;
+var $form = $( "form" );
+var $inputField = $( "input[tupe='text']" );
+var $input = ( "#input" );
+var $output = ( "#output" );
 
-    if( !choices ){
-        alert( branch.prompt );
-    }
-    else{
-        userInput = prompt( branch.prompt );
+/* eslint-diable no-use-before-define */
+function generateRespondToFormSubmit( node ){
+    var choices = story[node].choices;
+
+    return ( event ) => {
+        var userInput = $inputField.val();
+
+        event.preventDefault();
 
         if( choices.some( ( choice ) => userInput === choice ) ){
             runStory( userInput );
@@ -42,8 +46,22 @@ function runStory( node ){
         else{
             runStory( node );
         }
-    }
+    };
 }
 
+function runStory( node ){
+    var branch = story[node];
+    var choices = branch.choices;
+    // var userInput;
+
+    if( !choices ){
+        "#output".text( branch.prompt );
+    }
+    else{
+        $form.off( "submit" );
+        $input.text( branch.prompt );
+        $form.on( "submit", generateRespondToFormSubmit( node ) );
+    }
+}
 
 runStory( "start" );
