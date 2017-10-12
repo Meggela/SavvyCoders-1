@@ -33,3 +33,38 @@
 [debug] [2017-10-06T01:00:27.921Z] <<< HTTP RESPONSE 200
 [info] ✔  hosting: Local server: http://localhost:5000
 
+[debug] [2017-10-11T23:56:33.861Z] ----------------------------------------------------------------------
+[debug] [2017-10-11T23:56:33.864Z] Command:       /Users/MegShelley/.nvm/versions/node/v8.4.0/bin/node /Users/MegShelley/.nvm/versions/node/v8.4.0/bin/firebase serve
+[debug] [2017-10-11T23:56:33.864Z] CLI Version:   3.10.0
+[debug] [2017-10-11T23:56:33.864Z] Platform:      darwin
+[debug] [2017-10-11T23:56:33.864Z] Node Version:  v8.4.0
+[debug] [2017-10-11T23:56:33.865Z] Time:          Wed Oct 11 2017 18:56:33 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:33.865Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-11T23:56:33.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-11T23:56:33.891Z] > authorizing via signed-in user
+[debug] [2017-10-11T23:56:33.893Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-11T23:56:33.894Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/B9Jv1UxNzqMbdaYHfRMtG7OV10xv6-Cl6EG3qOvol6o',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Oct 11 2017 18:56:33 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:34.066Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T23:56:34.078Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/meg-s-profile  
+ Wed Oct 11 2017 18:56:34 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:34.340Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T23:56:34.341Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/meg-s-profile/tokens  
+ Wed Oct 11 2017 18:56:34 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:34.934Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/MegShelley/Code/SavvyCoders/MegShelley'...
+[info] 
+[debug] [2017-10-11T23:56:34.938Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/meg-s-profile  
+ Wed Oct 11 2017 18:56:34 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:35.134Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-11T23:56:35.135Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/242051076280/clients/_:getWebAppConfig  
+ Wed Oct 11 2017 18:56:35 GMT-0500 (CDT)
+[debug] [2017-10-11T23:56:35.393Z] <<< HTTP RESPONSE 200
+[info] ✔  hosting: Local server: http://localhost:5000
+
